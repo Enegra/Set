@@ -8,10 +8,10 @@
 
 #include <vector>
 
-template <class T> class Set {
+template <typename T> class Set {
 
 private:
-    template <class T> std::vector<T*> elements;
+    std::vector<T*> elements;
 public:
     T get(int index);
 
