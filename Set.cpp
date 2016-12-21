@@ -4,19 +4,19 @@
 
 #include "Set.h"
 
-template <class Set::T> class T Set::get(int index) {
-    return *elements.at(index);
+template <class T> T Set<T>::get(int index) {
+    return elements.at(index);
 }
 
-template<class Set::T> void Set::operator+(T &element) {
+template <class T> void Set<T>::operator+(T &element) {
     elements.push_back(&element);
 }
 
-void Set::operator+(Set &set) {
+template <class T> void Set<T>::operator+(Set<T> &set) {
     elements.insert(elements.end(), set.elements.begin(), set.elements.end());
 }
 
-void Set::sort() {
+template <class T>void Set<T>::sort() {
 
 }
 

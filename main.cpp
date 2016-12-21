@@ -2,9 +2,9 @@
 #include "Set.h"
 
 int main() {
-    Set<int> set = Set<int>();
-    int a = 5;
+    Set<std::string> set = Set<std::string>();
+    std::string a = "Ala";
     set+a;
-    std::cout<<set.get(0)<<std::endl;
+//    std::cout<<set.get(0)<<std::endl;
     return 0;
 }
