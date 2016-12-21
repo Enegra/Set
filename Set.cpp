@@ -2,6 +2,7 @@
 // Created by agnie on 12/21/2016.
 //
 
+#include <algorithm>
 #include "Set.h"
 
 template <class T> T Set<T>::get(int index) {
@@ -17,6 +18,6 @@ template <class T> void Set<T>::operator+(Set<T> &set) {
 }
 
 template <class T>void Set<T>::sort() {
-
+    std::sort(elements.begin(), elements.end());
 }
 
