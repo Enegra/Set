@@ -11,7 +11,7 @@
 template <class T> class Set {
 
 private:
-    std::vector<T> elements;
+    template <class T> std::vector<T*> elements;
 public:
     T get(int index);
 
