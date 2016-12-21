@@ -8,7 +8,7 @@
 
 #include <vector>
 
-template <typename T> class Set {
+template <class T> class Set {
 
 private:
     std::vector<T*> elements;
