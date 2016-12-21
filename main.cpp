@@ -49,6 +49,6 @@ int main() {
     dogSet+reksio;
     std::cout<<dogSet.get(0).getName()<<" " << dogSet.get(1).getName()<<" "<<dogSet.get(2).getName()<<std::endl;
     dogSet.sort();
-    std::cout<<dogSet.get(0).getName()<<std::endl;
+    std::cout<<dogSet.get(0).getName()<<" " << dogSet.get(1).getName()<<" "<<dogSet.get(2).getName()<<std::endl;
     return 0;
 }
